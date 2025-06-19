@@ -1,0 +1,5856 @@
+[
+  {
+    "Type": "Function",
+    "Name": "Destruct",
+    "Outer": "WBP_ModernMenu_Currency_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "SuperStruct": {
+      "ObjectName": "Class'UserWidget:Destruct'",
+      "ObjectPath": "/Script/UMG"
+    },
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 0,
+        "Function": {
+          "ObjectName": "Function'WBP_ModernMenu_Currency_C:ExecuteUbergraph_WBP_ModernMenu_Currency'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.1"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 279
+          }
+        ],
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.ExecuteUbergraph_WBP_ModernMenu_Currency[279]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 15,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 17
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCosmetic | FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WBP_ModernMenu_Currency",
+    "Outer": "WBP_ModernMenu_Currency_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_ComputedJump",
+        "StatementIndex": 0,
+        "OffsetExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:ExecuteUbergraph_WBP_ModernMenu_Currency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.1"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "EntryPoint",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_FinalFunction",
+        "StatementIndex": 10,
+        "Function": {
+          "ObjectName": "Class'UserWidget:StopAllAnimations'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "Parameters": []
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 20,
+        "Variable": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "NewAmount",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 4,
+              "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_IntConst",
+          "Value": -1
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 43,
+        "Variable": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "CurrentAmount",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 4,
+              "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_IntConst",
+          "Value": -1
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 66,
+        "ObjectExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Increase_Value",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+              "PropertyClass": {
+                "ObjectName": "WidgetBlueprintGeneratedClass'WBP_AltarTextBlock_C'",
+                "ObjectPath": "/Game/UI/Modern/Prefabs/WBP_AltarTextBlock.11"
+              }
+            }
+          }
+        },
+        "Offset": 15,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'Widget:SetRenderOpacity'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_FloatConst",
+              "Value": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 103,
+        "CodeOffset": 294,
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.ExecuteUbergraph_WBP_ModernMenu_Currency[294]"
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 108,
+        "Variable": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "CurrentAmount",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 4,
+              "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "NewAmount",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 4,
+              "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 135,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:ExecuteUbergraph_WBP_ModernMenu_Currency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.1"
+            },
+            "Property": {
+              "Type": "TextProperty",
+              "Name": "CallFunc_Conv_IntToText_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 24
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetTextLibrary:Conv_IntToText'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CurrentAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            },
+            {
+              "Inst": "EX_False"
+            },
+            {
+              "Inst": "EX_True"
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 1
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 324
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 184,
+        "ObjectExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Current_Money",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+              "PropertyClass": {
+                "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Original_ImageAndText_C'",
+                "ObjectPath": "/Game/UI/Original/Prefabs/WBP_Original_ImageAndText.18"
+              }
+            }
+          }
+        },
+        "Offset": 23,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_LocalVirtualFunction",
+          "Function": "UpdateText",
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:ExecuteUbergraph_WBP_ModernMenu_Currency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.1"
+                },
+                "Property": {
+                  "Type": "TextProperty",
+                  "Name": "CallFunc_Conv_IntToText_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 24
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 229,
+        "ObjectExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Current_Money_Outline",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+              "PropertyClass": {
+                "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Original_ImageAndText_C'",
+                "ObjectPath": "/Game/UI/Original/Prefabs/WBP_Original_ImageAndText.18"
+              }
+            }
+          }
+        },
+        "Offset": 23,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_LocalVirtualFunction",
+          "Function": "UpdateText",
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:ExecuteUbergraph_WBP_ModernMenu_Currency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.1"
+                },
+                "Property": {
+                  "Type": "TextProperty",
+                  "Name": "CallFunc_Conv_IntToText_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 24
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 274,
+        "CodeOffset": 294,
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.ExecuteUbergraph_WBP_ModernMenu_Currency[294]"
+      },
+      {
+        "Inst": "EX_FinalFunction",
+        "StatementIndex": 279,
+        "Function": {
+          "ObjectName": "Class'UserWidget:Destruct'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "Parameters": []
+      },
+      {
+        "Inst": "EX_Jump",
+        "StatementIndex": 289,
+        "CodeOffset": 10,
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.ExecuteUbergraph_WBP_ModernMenu_Currency[10]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 294,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 296
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "SequenceEvent__ENTRYPOINTWBP_ModernMenu_Currency",
+    "Outer": "WBP_ModernMenu_Currency_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LocalVirtualFunction",
+        "StatementIndex": 0,
+        "Function": "SwapCurrencyOnAnim",
+        "Parameters": []
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 14,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SequenceEvent__ENTRYPOINTWBP_ModernMenu_Currency_0",
+    "Outer": "WBP_ModernMenu_Currency_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LocalVirtualFunction",
+        "StatementIndex": 0,
+        "Function": "SwapCurrencyOnAnim",
+        "Parameters": []
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 14,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 16
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SwapCurrencyOnAnim",
+    "Outer": "WBP_ModernMenu_Currency_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_LocalFinalFunction",
+        "StatementIndex": 0,
+        "Function": {
+          "ObjectName": "Function'WBP_ModernMenu_Currency_C:ExecuteUbergraph_WBP_ModernMenu_Currency'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.1"
+        },
+        "Parameters": [
+          {
+            "Inst": "EX_IntConst",
+            "Value": 108
+          }
+        ],
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.ExecuteUbergraph_WBP_ModernMenu_Currency[108]"
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 15,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 17
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateCurrency",
+    "Outer": "WBP_ModernMenu_Currency_C",
+    "Class": "UScriptClass'Function'",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "InNewAmount",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsAnimationPlaying_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsAnimationPlaying_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "Class'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 80,
+          "Struct": {
+            "ObjectName": "Class'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_PlayAnimation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'UMGSequencePlayer'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_IntToText_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      }
+    ],
+    "ScriptBytecode": [
+      {
+        "Inst": "EX_PushExecutionFlow",
+        "StatementIndex": 0,
+        "PushingAddress": 1365,
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.UpdateCurrency[1365]"
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 5,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:GreaterEqual_IntInt'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CurrentAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 0
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 39,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:NotEqual_IntInt'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "InNewAmount",
+                  "Flags": "RF_Public",
+                  "ElementSize": 4,
+                  "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+                }
+              }
+            },
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CurrentAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 77,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_BooleanAND_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:BooleanAND'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "BoolProperty",
+                  "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 1,
+                  "FieldSize": 1,
+                  "ByteOffset": 0,
+                  "ByteMask": 1,
+                  "FieldMask": 255,
+                  "BoolSize": 1,
+                  "bIsNativeBool": true
+                }
+              }
+            },
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "BoolProperty",
+                  "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 1,
+                  "FieldSize": 1,
+                  "ByteOffset": 0,
+                  "ByteMask": 1,
+                  "FieldMask": 255,
+                  "BoolSize": 1,
+                  "bIsNativeBool": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_JumpIfNot",
+        "StatementIndex": 115,
+        "CodeOffset": 265,
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.UpdateCurrency[265]",
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_BooleanAND_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_PushExecutionFlow",
+        "StatementIndex": 129,
+        "PushingAddress": 432,
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.UpdateCurrency[432]"
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 134,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_IsAnimationPlaying_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'UserWidget:IsAnimationPlaying'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "ObjectProperty",
+                  "Name": "CurrencyIncrease",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 8,
+                  "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+                  "PropertyClass": {
+                    "ObjectName": "Class'WidgetAnimation'",
+                    "ObjectPath": "/Script/UMG"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 163,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_IsAnimationPlaying_ReturnValue_1",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'UserWidget:IsAnimationPlaying'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "ObjectProperty",
+                  "Name": "CurrencyDecrease",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 8,
+                  "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+                  "PropertyClass": {
+                    "ObjectName": "Class'WidgetAnimation'",
+                    "ObjectPath": "/Script/UMG"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 192,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_BooleanOR_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:BooleanOR'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "BoolProperty",
+                  "Name": "CallFunc_IsAnimationPlaying_ReturnValue_1",
+                  "Flags": "RF_Public",
+                  "ElementSize": 1,
+                  "FieldSize": 1,
+                  "ByteOffset": 0,
+                  "ByteMask": 1,
+                  "FieldMask": 255,
+                  "BoolSize": 1,
+                  "bIsNativeBool": true
+                }
+              }
+            },
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "BoolProperty",
+                  "Name": "CallFunc_IsAnimationPlaying_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 1,
+                  "FieldSize": 1,
+                  "ByteOffset": 0,
+                  "ByteMask": 1,
+                  "FieldMask": 255,
+                  "BoolSize": 1,
+                  "bIsNativeBool": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_PopExecutionFlowIfNot",
+        "StatementIndex": 230,
+        "BooleanExpression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_BooleanOR_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_FinalFunction",
+        "StatementIndex": 240,
+        "Function": {
+          "ObjectName": "Class'UserWidget:StopAllAnimations'",
+          "ObjectPath": "/Script/UMG"
+        },
+        "Parameters": []
+      },
+      {
+        "Inst": "EX_LocalVirtualFunction",
+        "StatementIndex": 250,
+        "Function": "SwapCurrencyOnAnim",
+        "Parameters": []
+      },
+      {
+        "Inst": "EX_PopExecutionFlow",
+        "StatementIndex": 264
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 265,
+        "Variable": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "CurrentAmount",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 4,
+              "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "InNewAmount",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 292,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "TextProperty",
+              "Name": "CallFunc_Conv_IntToText_ReturnValue_2",
+              "Flags": "RF_Public",
+              "ElementSize": 24
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetTextLibrary:Conv_IntToText'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CurrentAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            },
+            {
+              "Inst": "EX_False"
+            },
+            {
+              "Inst": "EX_True"
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 1
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 324
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 341,
+        "ObjectExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Current_Money",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+              "PropertyClass": {
+                "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Original_ImageAndText_C'",
+                "ObjectPath": "/Game/UI/Original/Prefabs/WBP_Original_ImageAndText.18"
+              }
+            }
+          }
+        },
+        "Offset": 23,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_LocalVirtualFunction",
+          "Function": "UpdateText",
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "TextProperty",
+                  "Name": "CallFunc_Conv_IntToText_ReturnValue_2",
+                  "Flags": "RF_Public",
+                  "ElementSize": 24
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 386,
+        "ObjectExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Current_Money_Outline",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+              "PropertyClass": {
+                "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Original_ImageAndText_C'",
+                "ObjectPath": "/Game/UI/Original/Prefabs/WBP_Original_ImageAndText.18"
+              }
+            }
+          }
+        },
+        "Offset": 23,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_LocalVirtualFunction",
+          "Function": "UpdateText",
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "TextProperty",
+                  "Name": "CallFunc_Conv_IntToText_ReturnValue_2",
+                  "Flags": "RF_Public",
+                  "ElementSize": 24
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_PopExecutionFlow",
+        "StatementIndex": 431
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 432,
+        "Variable": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "NewAmount",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 4,
+              "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "InNewAmount",
+              "Flags": "RF_Public",
+              "ElementSize": 4,
+              "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 459,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 4
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:Subtract_IntInt'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "NewAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            },
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CurrentAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 505,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "TextProperty",
+              "Name": "CallFunc_Conv_IntToText_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 24
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetTextLibrary:Conv_IntToText'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+                  "Flags": "RF_Public",
+                  "ElementSize": 4
+                }
+              }
+            },
+            {
+              "Inst": "EX_False"
+            },
+            {
+              "Inst": "EX_True"
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 1
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 324
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 554,
+        "Variable": {
+          "Inst": "EX_StructMemberContext",
+          "Property": {
+            "Path": [
+              "ArgumentName"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'FormatArgumentData'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          "StructExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+              },
+              "Property": {
+                "Type": "StructProperty",
+                "Name": "K2Node_MakeStruct_FormatArgumentData",
+                "Flags": "RF_Public",
+                "ElementSize": 80,
+                "Struct": {
+                  "ObjectName": "Class'FormatArgumentData'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_StringConst",
+          "Value": "Value"
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 588,
+        "Variable": {
+          "Inst": "EX_StructMemberContext",
+          "Property": {
+            "Path": [
+              "ArgumentValueType"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'FormatArgumentData'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          "StructExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+              },
+              "Property": {
+                "Type": "StructProperty",
+                "Name": "K2Node_MakeStruct_FormatArgumentData",
+                "Flags": "RF_Public",
+                "ElementSize": 80,
+                "Struct": {
+                  "ObjectName": "Class'FormatArgumentData'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_ByteConst",
+          "Value": 4
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 617,
+        "Variable": {
+          "Inst": "EX_StructMemberContext",
+          "Property": {
+            "Path": [
+              "ArgumentValue"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'FormatArgumentData'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          "StructExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+              },
+              "Property": {
+                "Type": "StructProperty",
+                "Name": "K2Node_MakeStruct_FormatArgumentData",
+                "Flags": "RF_Public",
+                "ElementSize": 80,
+                "Struct": {
+                  "ObjectName": "Class'FormatArgumentData'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "TextProperty",
+              "Name": "CallFunc_Conv_IntToText_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 24
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 653,
+        "Variable": {
+          "Inst": "EX_StructMemberContext",
+          "Property": {
+            "Path": [
+              "ArgumentValueInt"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'FormatArgumentData'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          "StructExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+              },
+              "Property": {
+                "Type": "StructProperty",
+                "Name": "K2Node_MakeStruct_FormatArgumentData",
+                "Flags": "RF_Public",
+                "ElementSize": 80,
+                "Struct": {
+                  "ObjectName": "Class'FormatArgumentData'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_Int64Const",
+          "Value": 0
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 689,
+        "Variable": {
+          "Inst": "EX_StructMemberContext",
+          "Property": {
+            "Path": [
+              "ArgumentValueFloat"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'FormatArgumentData'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          "StructExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+              },
+              "Property": {
+                "Type": "StructProperty",
+                "Name": "K2Node_MakeStruct_FormatArgumentData",
+                "Flags": "RF_Public",
+                "ElementSize": 80,
+                "Struct": {
+                  "ObjectName": "Class'FormatArgumentData'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_FloatConst",
+          "Value": 0.0
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 721,
+        "Variable": {
+          "Inst": "EX_StructMemberContext",
+          "Property": {
+            "Path": [
+              "ArgumentValueDouble"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'FormatArgumentData'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          "StructExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+              },
+              "Property": {
+                "Type": "StructProperty",
+                "Name": "K2Node_MakeStruct_FormatArgumentData",
+                "Flags": "RF_Public",
+                "ElementSize": 80,
+                "Struct": {
+                  "ObjectName": "Class'FormatArgumentData'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_DoubleConst",
+          "Value": 0.0
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 757,
+        "Variable": {
+          "Inst": "EX_StructMemberContext",
+          "Property": {
+            "Path": [
+              "ArgumentValueGender"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "Class'FormatArgumentData'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          "StructExpression": {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+              },
+              "Property": {
+                "Type": "StructProperty",
+                "Name": "K2Node_MakeStruct_FormatArgumentData",
+                "Flags": "RF_Public",
+                "ElementSize": 80,
+                "Struct": {
+                  "ObjectName": "Class'FormatArgumentData'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_ByteConst",
+          "Value": 0
+        }
+      },
+      {
+        "Inst": "EX_SetArray",
+        "StatementIndex": 786,
+        "AssigningProperty": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "ArrayProperty",
+              "Name": "K2Node_MakeArray_Array",
+              "Flags": "RF_Public",
+              "ElementSize": 16,
+              "PropertyFlags": "ReferenceParm",
+              "Inner": {
+                "Type": "StructProperty",
+                "Name": "K2Node_MakeArray_Array",
+                "Flags": "RF_Public",
+                "ElementSize": 80,
+                "Struct": {
+                  "ObjectName": "Class'FormatArgumentData'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        },
+        "Elements": [
+          {
+            "Inst": "EX_LocalVariable",
+            "Variable": {
+              "Owner": {
+                "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+              },
+              "Property": {
+                "Type": "StructProperty",
+                "Name": "K2Node_MakeStruct_FormatArgumentData",
+                "Flags": "RF_Public",
+                "ElementSize": 80,
+                "Struct": {
+                  "ObjectName": "Class'FormatArgumentData'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 806,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "CallFunc_Subtract_IntInt_ReturnValue_1",
+              "Flags": "RF_Public",
+              "ElementSize": 4
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:Subtract_IntInt'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "NewAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            },
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CurrentAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 852,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "TextProperty",
+              "Name": "CallFunc_Format_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 24
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetTextLibrary:Format'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_TextConst",
+              "Value": {
+                "SourceString": {
+                  "Inst": "EX_StringConst",
+                  "Value": "+{Value}"
+                },
+                "KeyString": {
+                  "Inst": "EX_StringConst",
+                  "Value": "7DD85E914B9758B54074BFAA0BD724CC"
+                },
+                "Namespace": {
+                  "Inst": "EX_StringConst",
+                  "Value": ""
+                }
+              }
+            },
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "ArrayProperty",
+                  "Name": "K2Node_MakeArray_Array",
+                  "Flags": "RF_Public",
+                  "ElementSize": 16,
+                  "PropertyFlags": "ReferenceParm",
+                  "Inner": {
+                    "Type": "StructProperty",
+                    "Name": "K2Node_MakeArray_Array",
+                    "Flags": "RF_Public",
+                    "ElementSize": 80,
+                    "Struct": {
+                      "ObjectName": "Class'FormatArgumentData'",
+                      "ObjectPath": "/Script/Engine"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 937,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "TextProperty",
+              "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+              "Flags": "RF_Public",
+              "ElementSize": 24
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetTextLibrary:Conv_IntToText'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CallFunc_Subtract_IntInt_ReturnValue_1",
+                  "Flags": "RF_Public",
+                  "ElementSize": 4
+                }
+              }
+            },
+            {
+              "Inst": "EX_False"
+            },
+            {
+              "Inst": "EX_True"
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 1
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 324
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 986,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "CallFunc_Subtract_IntInt_ReturnValue_2",
+              "Flags": "RF_Public",
+              "ElementSize": 4
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:Subtract_IntInt'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "NewAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            },
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CurrentAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 1032,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_Greater_IntInt_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:Greater_IntInt'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CallFunc_Subtract_IntInt_ReturnValue_2",
+                  "Flags": "RF_Public",
+                  "ElementSize": 4
+                }
+              }
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 0
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 1066,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "Temp_bool_Variable_1",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_Greater_IntInt_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_Context",
+        "StatementIndex": 1085,
+        "ObjectExpression": {
+          "Inst": "EX_InstanceVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "Increase_Value",
+              "Flags": "RF_Public | RF_LoadCompleted",
+              "ElementSize": 8,
+              "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+              "PropertyClass": {
+                "ObjectName": "WidgetBlueprintGeneratedClass'WBP_AltarTextBlock_C'",
+                "ObjectPath": "/Game/UI/Modern/Prefabs/WBP_AltarTextBlock.11"
+              }
+            }
+          }
+        },
+        "Offset": 67,
+        "RValuePointer": null,
+        "ContextExpression": {
+          "Inst": "EX_LocalVirtualFunction",
+          "Function": "SetText",
+          "Parameters": [
+            {
+              "Inst": "EX_SwitchValue",
+              "IndexTerm": {
+                "Inst": "EX_LocalVariable",
+                "Variable": {
+                  "Owner": {
+                    "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                    "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                  },
+                  "Property": {
+                    "Type": "BoolProperty",
+                    "Name": "Temp_bool_Variable_1",
+                    "Flags": "RF_Public",
+                    "ElementSize": 1,
+                    "FieldSize": 1,
+                    "ByteOffset": 0,
+                    "ByteMask": 1,
+                    "FieldMask": 255,
+                    "BoolSize": 1,
+                    "bIsNativeBool": true
+                  }
+                }
+              },
+              "EndGotoOffset": 1173,
+              "Cases": [
+                {
+                  "CaseIndexValueTerm": {
+                    "Inst": "EX_False"
+                  },
+                  "NextOffset": 1150,
+                  "CaseTerm": {
+                    "Inst": "EX_LocalVariable",
+                    "Variable": {
+                      "Owner": {
+                        "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                      },
+                      "Property": {
+                        "Type": "TextProperty",
+                        "Name": "CallFunc_Conv_IntToText_ReturnValue_1",
+                        "Flags": "RF_Public",
+                        "ElementSize": 24
+                      }
+                    }
+                  }
+                },
+                {
+                  "CaseIndexValueTerm": {
+                    "Inst": "EX_True"
+                  },
+                  "NextOffset": 1164,
+                  "CaseTerm": {
+                    "Inst": "EX_LocalVariable",
+                    "Variable": {
+                      "Owner": {
+                        "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                      },
+                      "Property": {
+                        "Type": "TextProperty",
+                        "Name": "CallFunc_Format_ReturnValue",
+                        "Flags": "RF_Public",
+                        "ElementSize": 24
+                      }
+                    }
+                  }
+                }
+              ],
+              "DefaultTerm": {
+                "Inst": "EX_LocalVariable",
+                "Variable": {
+                  "Owner": {
+                    "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                    "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                  },
+                  "Property": {
+                    "Type": "TextProperty",
+                    "Name": "K2Node_Select_Default",
+                    "Flags": "RF_Public",
+                    "ElementSize": 24
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_Let",
+        "StatementIndex": 1174,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "IntProperty",
+              "Name": "CallFunc_Subtract_IntInt_ReturnValue_3",
+              "Flags": "RF_Public",
+              "ElementSize": 4
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:Subtract_IntInt'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "NewAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            },
+            {
+              "Inst": "EX_InstanceVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CurrentAmount",
+                  "Flags": "RF_Public | RF_LoadCompleted",
+                  "ElementSize": 4,
+                  "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 1220,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_Greater_IntInt_ReturnValue_1",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_CallMath",
+          "Function": {
+            "ObjectName": "Class'KismetMathLibrary:Greater_IntInt'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_LocalVariable",
+              "Variable": {
+                "Owner": {
+                  "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                  "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                },
+                "Property": {
+                  "Type": "IntProperty",
+                  "Name": "CallFunc_Subtract_IntInt_ReturnValue_3",
+                  "Flags": "RF_Public",
+                  "ElementSize": 4
+                }
+              }
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 0
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_LetBool",
+        "StatementIndex": 1254,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "Temp_bool_Variable",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "BoolProperty",
+              "Name": "CallFunc_Greater_IntInt_ReturnValue_1",
+              "Flags": "RF_Public",
+              "ElementSize": 1,
+              "FieldSize": 1,
+              "ByteOffset": 0,
+              "ByteMask": 1,
+              "FieldMask": 255,
+              "BoolSize": 1,
+              "bIsNativeBool": true
+            }
+          }
+        }
+      },
+      {
+        "Inst": "EX_LetObj",
+        "StatementIndex": 1273,
+        "Variable": {
+          "Inst": "EX_LocalVariable",
+          "Variable": {
+            "Owner": {
+              "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+            },
+            "Property": {
+              "Type": "ObjectProperty",
+              "Name": "CallFunc_PlayAnimation_ReturnValue",
+              "Flags": "RF_Public",
+              "ElementSize": 8,
+              "PropertyClass": {
+                "ObjectName": "Class'UMGSequencePlayer'",
+                "ObjectPath": "/Script/UMG"
+              }
+            }
+          }
+        },
+        "Expression": {
+          "Inst": "EX_FinalFunction",
+          "Function": {
+            "ObjectName": "Class'UserWidget:PlayAnimation'",
+            "ObjectPath": "/Script/UMG"
+          },
+          "Parameters": [
+            {
+              "Inst": "EX_SwitchValue",
+              "IndexTerm": {
+                "Inst": "EX_LocalVariable",
+                "Variable": {
+                  "Owner": {
+                    "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                    "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                  },
+                  "Property": {
+                    "Type": "BoolProperty",
+                    "Name": "Temp_bool_Variable",
+                    "Flags": "RF_Public",
+                    "ElementSize": 1,
+                    "FieldSize": 1,
+                    "ByteOffset": 0,
+                    "ByteMask": 1,
+                    "FieldMask": 255,
+                    "BoolSize": 1,
+                    "bIsNativeBool": true
+                  }
+                }
+              },
+              "EndGotoOffset": 1345,
+              "Cases": [
+                {
+                  "CaseIndexValueTerm": {
+                    "Inst": "EX_False"
+                  },
+                  "NextOffset": 1322,
+                  "CaseTerm": {
+                    "Inst": "EX_InstanceVariable",
+                    "Variable": {
+                      "Owner": {
+                        "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                      },
+                      "Property": {
+                        "Type": "ObjectProperty",
+                        "Name": "CurrencyDecrease",
+                        "Flags": "RF_Public | RF_LoadCompleted",
+                        "ElementSize": 8,
+                        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+                        "PropertyClass": {
+                          "ObjectName": "Class'WidgetAnimation'",
+                          "ObjectPath": "/Script/UMG"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "CaseIndexValueTerm": {
+                    "Inst": "EX_True"
+                  },
+                  "NextOffset": 1336,
+                  "CaseTerm": {
+                    "Inst": "EX_InstanceVariable",
+                    "Variable": {
+                      "Owner": {
+                        "ObjectName": "WidgetBlueprintGeneratedClass'WBP_ModernMenu_Currency_C'",
+                        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.56"
+                      },
+                      "Property": {
+                        "Type": "ObjectProperty",
+                        "Name": "CurrencyIncrease",
+                        "Flags": "RF_Public | RF_LoadCompleted",
+                        "ElementSize": 8,
+                        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+                        "PropertyClass": {
+                          "ObjectName": "Class'WidgetAnimation'",
+                          "ObjectPath": "/Script/UMG"
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "DefaultTerm": {
+                "Inst": "EX_LocalVariable",
+                "Variable": {
+                  "Owner": {
+                    "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+                    "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+                  },
+                  "Property": {
+                    "Type": "ObjectProperty",
+                    "Name": "K2Node_Select_Default_1",
+                    "Flags": "RF_Public",
+                    "ElementSize": 8,
+                    "PropertyClass": {
+                      "ObjectName": "Class'WidgetAnimation'",
+                      "ObjectPath": "/Script/UMG"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Inst": "EX_FloatConst",
+              "Value": 0.0
+            },
+            {
+              "Inst": "EX_IntConst",
+              "Value": 1
+            },
+            {
+              "Inst": "EX_ByteConst",
+              "Value": 0
+            },
+            {
+              "Inst": "EX_FloatConst",
+              "Value": 1.0
+            },
+            {
+              "Inst": "EX_False"
+            }
+          ]
+        }
+      },
+      {
+        "Inst": "EX_PopExecutionFlow",
+        "StatementIndex": 1364
+      },
+      {
+        "Inst": "EX_Return",
+        "StatementIndex": 1365,
+        "Expression": {
+          "Inst": "EX_Nothing"
+        }
+      },
+      {
+        "Inst": "EX_EndOfScript",
+        "StatementIndex": 1367
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "CurrencyDecrease",
+    "Outer": "CurrencyDecrease_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "DynamicBinding": {
+            "Function": null,
+            "ResolveParamsProperty": {
+              "Path": [],
+              "ResolvedOwner": null
+            }
+          },
+          "Guid": "02BB6883-44D4C6B6-4C7BA5BB-9E75E6BE",
+          "Name": "Increase_Value",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "DynamicBinding": {
+            "Function": null,
+            "ResolveParamsProperty": {
+              "Path": [],
+              "ResolvedOwner": null
+            }
+          },
+          "Guid": "47E72CB0-466E4F96-D233549F-53474050",
+          "Name": "Current_Money_Outline",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "DynamicBinding": {
+            "Function": null,
+            "ResolveParamsProperty": {
+              "Path": [],
+              "ResolvedOwner": null
+            }
+          },
+          "Guid": "91F7F7A2-4605F834-405E7DAE-72313241",
+          "Name": "RetainerBox_0",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "02BB6883-44D4C6B6-4C7BA5BB-9E75E6BE",
+          "BindingName": "Increase_Value",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieScene2DTransformTrack_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.10"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.38"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "47E72CB0-466E4F96-D233549F-53474050",
+          "BindingName": "Current_Money_Outline",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneEventTrack'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneEventTrack_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.30"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "91F7F7A2-4605F834-405E7DAE-72313241",
+          "BindingName": "RetainerBox_0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_2'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.39"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 108001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "C81F401E-4B7FB2D7-AA883682-3DBEFC13"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "CurrencyIncrease",
+    "Outer": "CurrencyIncrease_INST",
+    "Class": "UScriptClass'MovieScene'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Possessables": [
+        {
+          "Tags": [],
+          "DynamicBinding": {
+            "Function": null,
+            "ResolveParamsProperty": {
+              "Path": [],
+              "ResolvedOwner": null
+            }
+          },
+          "Guid": "8F49F9A6-4DC1FBA6-CE9E3BAE-04713985",
+          "Name": "Increase_Value",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "DynamicBinding": {
+            "Function": null,
+            "ResolveParamsProperty": {
+              "Path": [],
+              "ResolvedOwner": null
+            }
+          },
+          "Guid": "F508D64E-4CB5ED96-4ADA2B9F-65AB89EF",
+          "Name": "Current_Money_Outline",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        },
+        {
+          "Tags": [],
+          "DynamicBinding": {
+            "Function": null,
+            "ResolveParamsProperty": {
+              "Path": [],
+              "ResolvedOwner": null
+            }
+          },
+          "Guid": "B73F32CA-461A75D7-538335B7-3154737A",
+          "Name": "RetainerBox_0",
+          "ParentGuid": "00000000-00000000-00000000-00000000",
+          "SpawnableObjectBindingID": {
+            "Guid": "00000000-00000000-00000000-00000000",
+            "SequenceID": 0,
+            "ResolveParentIndex": -1
+          }
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "8F49F9A6-4DC1FBA6-CE9E3BAE-04713985",
+          "BindingName": "Increase_Value",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene2DTransformTrack'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieScene2DTransformTrack_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.11"
+            },
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.40"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "F508D64E-4CB5ED96-4ADA2B9F-65AB89EF",
+          "BindingName": "Current_Money_Outline",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneEventTrack'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneEventTrack_1'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.31"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "B73F32CA-461A75D7-538335B7-3154737A",
+          "BindingName": "RetainerBox_0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_2'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.41"
+            }
+          ]
+        }
+      ],
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 108001
+            }
+          }
+        }
+      },
+      "DisplayRate": {
+        "Numerator": 20
+      },
+      "Signature": "C7A803DD-420E7363-4657C491-C15E774B"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TransformMask": {
+        "Mask": 103
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Translation[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 90000
+          },
+          {
+            "Value": 108000
+          },
+          {
+            "Value": 120000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 10.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Scale[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Shear": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Shear[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.12"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.13"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 108000
+            }
+          }
+        }
+      },
+      "Signature": "8DEA1AFB-48A87F60-9EB9A2A8-A4C45CA4"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformSection",
+    "Name": "MovieScene2DTransformSection_0",
+    "Outer": "MovieScene2DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene2DTransformSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "TransformMask": {
+        "Mask": 103
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Translation[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 14939
+          },
+          {
+            "Value": 120000
+          }
+        ],
+        "Values": [
+          {
+            "Value": -10.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Scale[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Shear": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Shear[1]": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.20"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.21"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 18000
+            }
+          }
+        }
+      },
+      "Signature": "693DB0F7-412E0C2D-2DA0CFA6-D2AEDD80"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "CurrencyDecrease",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.8"
+        }
+      ],
+      "EvaluationFieldGuid": "8D02FADA-40E39898-AD54C198-A4153E4C",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.8"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 108000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "8D02FADA-40E39898-AD54C198-A4153E4C"
+    }
+  },
+  {
+    "Type": "MovieScene2DTransformTrack",
+    "Name": "MovieScene2DTransformTrack_0",
+    "Outer": "CurrencyIncrease",
+    "Class": "UScriptClass'MovieScene2DTransformTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderTransform",
+        "PropertyPath": "RenderTransform",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieScene2DTransformSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.9"
+        }
+      ],
+      "EvaluationFieldGuid": "2F3C1596-469053CF-2886AF87-16BC7DA3",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene2DTransformSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.9"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 18000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "2F3C1596-469053CF-2886AF87-16BC7DA3"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneEventTriggerSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneEventTriggerSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene2DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneEventTriggerSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneEventTriggerSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "CurrencyDecrease_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 3,
+                  "Capacity": 3
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 108000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "OneShotEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 18000
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 18000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.8"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.34"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneEventTriggerSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneEventTrack_0.MovieSceneEventTriggerSection_0'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.32"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.35"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 3
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "02BB6883-44D4C6B6-4C7BA5BB-9E75E6BE"
+          },
+          {
+            "ObjectBindingID": "02BB6883-44D4C6B6-4C7BA5BB-9E75E6BE"
+          },
+          {
+            "ObjectBindingID": "47E72CB0-466E4F96-D233549F-53474050"
+          },
+          {
+            "ObjectBindingID": "91F7F7A2-4605F834-405E7DAE-72313241"
+          }
+        ]
+      },
+      "TrackTemplateField": {
+        "Ranges": [
+          {
+            "Value": {
+              "LowerBound": {
+                "Type": 2,
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": 2,
+                "Value": {
+                  "Value": 0
+                }
+              }
+            }
+          }
+        ],
+        "Groups": [
+          {
+            "LUTIndices": [],
+            "TrackLUT": [],
+            "SectionLUT": []
+          }
+        ],
+        "MetaData": [
+          {
+            "ActiveSequences": [
+              {
+                "Value": 0
+              }
+            ],
+            "ActiveEntities": []
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 108000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "D67A6F4A-47D2E67A-B8D7DE85-1A6DDA7C",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEvaluationTemplate": true,
+        "bEvaluationTemplateField": true,
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEvaluationTemplate": true,
+        "bEvaluationTemplateField": true,
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "CurrencyIncrease_INST",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 3,
+                  "Capacity": 3
+                },
+                {
+                  "StartIndex": 3,
+                  "Size": 2,
+                  "Capacity": 2
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 2,
+                  "Capacity": 2
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 18000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                },
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 18000
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 108000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "OneShotEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": -1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 12000
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 12000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene2DTransformSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieScene2DTransformTrack_0.MovieScene2DTransformSection_0'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.9"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.36"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneEventTriggerSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneEventTrack_1.MovieSceneEventTriggerSection_0'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.33"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.37"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 3
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "8F49F9A6-4DC1FBA6-CE9E3BAE-04713985"
+          },
+          {
+            "ObjectBindingID": "8F49F9A6-4DC1FBA6-CE9E3BAE-04713985"
+          },
+          {
+            "ObjectBindingID": "F508D64E-4CB5ED96-4ADA2B9F-65AB89EF"
+          },
+          {
+            "ObjectBindingID": "B73F32CA-461A75D7-538335B7-3154737A"
+          }
+        ]
+      },
+      "TrackTemplateField": {
+        "Ranges": [
+          {
+            "Value": {
+              "LowerBound": {
+                "Type": 2,
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": 2,
+                "Value": {
+                  "Value": 0
+                }
+              }
+            }
+          }
+        ],
+        "Groups": [
+          {
+            "LUTIndices": [],
+            "TrackLUT": [],
+            "SectionLUT": []
+          }
+        ],
+        "MetaData": [
+          {
+            "ActiveSequences": [
+              {
+                "Value": 0
+              }
+            ],
+            "ActiveEntities": []
+          }
+        ]
+      },
+      "DeterminismFences": [
+        {
+          "FrameNumber": {
+            "Value": 18000
+          },
+          "SubFrame": 0.0
+        },
+        {
+          "FrameNumber": {
+            "Value": 108000
+          },
+          "SubFrame": 0.0
+        }
+      ],
+      "CompiledSignature": "348A3650-47DE4077-7A1AD493-CC948611",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEvaluationTemplate": true,
+        "bEvaluationTemplateField": true,
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEvaluationTemplate": true,
+        "bEvaluationTemplateField": true,
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneEventTrack",
+    "Name": "MovieSceneEventTrack_0",
+    "Outer": "CurrencyDecrease",
+    "Class": "UScriptClass'MovieSceneEventTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneEventTriggerSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneEventTrack_0.MovieSceneEventTriggerSection_0'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.32"
+        }
+      ],
+      "EvaluationFieldGuid": "4BD6FA8D-44149D58-DECACCAB-BCAC20C7",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneEventTriggerSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneEventTrack_0.MovieSceneEventTriggerSection_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.32"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "4BD6FA8D-44149D58-DECACCAB-BCAC20C7"
+    }
+  },
+  {
+    "Type": "MovieSceneEventTrack",
+    "Name": "MovieSceneEventTrack_1",
+    "Outer": "CurrencyIncrease",
+    "Class": "UScriptClass'MovieSceneEventTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneEventTriggerSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneEventTrack_1.MovieSceneEventTriggerSection_0'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.33"
+        }
+      ],
+      "EvaluationFieldGuid": "B3098FD5-493BCD71-B2379AA0-8C2CF709",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneEventTriggerSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneEventTrack_1.MovieSceneEventTriggerSection_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.33"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "B3098FD5-493BCD71-B2379AA0-8C2CF709"
+    }
+  },
+  {
+    "Type": "MovieSceneEventTriggerSection",
+    "Name": "MovieSceneEventTriggerSection_0",
+    "Outer": "MovieSceneEventTrack_0",
+    "Class": "UScriptClass'MovieSceneEventTriggerSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EventChannel": {
+        "KeyTimes": [
+          {
+            "Value": 18000
+          }
+        ],
+        "KeyValues": [
+          {
+            "Ptrs": {
+              "Function": {
+                "ObjectName": "Function'WBP_ModernMenu_Currency_C:SequenceEvent__ENTRYPOINTWBP_ModernMenu_Currency_0'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.3"
+              },
+              "BoundObjectProperty": {
+                "Path": [],
+                "ResolvedOwner": null
+              }
+            }
+          }
+        ]
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneEventTrack_0.MovieSceneEventTriggerSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.14"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneEventTrack_0.MovieSceneEventTriggerSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.15"
+        }
+      },
+      "Signature": "57AEBC2D-44183B56-6530BEA5-34C692BF"
+    }
+  },
+  {
+    "Type": "MovieSceneEventTriggerSection",
+    "Name": "MovieSceneEventTriggerSection_0",
+    "Outer": "MovieSceneEventTrack_1",
+    "Class": "UScriptClass'MovieSceneEventTriggerSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "EventChannel": {
+        "KeyTimes": [
+          {
+            "Value": 12000
+          }
+        ],
+        "KeyValues": [
+          {
+            "Ptrs": {
+              "Function": {
+                "ObjectName": "Function'WBP_ModernMenu_Currency_C:SequenceEvent__ENTRYPOINTWBP_ModernMenu_Currency'",
+                "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.2"
+              },
+              "BoundObjectProperty": {
+                "Path": [],
+                "ResolvedOwner": null
+              }
+            }
+          }
+        ]
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneEventTrack_1.MovieSceneEventTriggerSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.22"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneEventTrack_1.MovieSceneEventTriggerSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.23"
+        }
+      },
+      "Signature": "BC4AE2A2-4C8A5AAC-671721B2-7F867B15"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 21867
+          },
+          {
+            "Value": 90000
+          },
+          {
+            "Value": 108000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.000104890976,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 2
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.16"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.17"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 108000
+            }
+          }
+        }
+      },
+      "Signature": "F2D35E4E-43F902FF-44E604B5-EC620400"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_2",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 15000
+          },
+          {
+            "Value": 18000
+          },
+          {
+            "Value": 48000
+          },
+          {
+            "Value": 108000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.18"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.19"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 108000
+            }
+          }
+        }
+      },
+      "Signature": "3D4B8950-4DE80E9F-6BAA09A5-17D7EAC4"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_0",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 15000
+          },
+          {
+            "Value": 90000
+          },
+          {
+            "Value": 108000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.24"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.25"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 108000
+            }
+          }
+        }
+      },
+      "Signature": "2589D012-4D1B48D8-23613BB1-A313F154"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_2",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 12000
+          },
+          {
+            "Value": 15000
+          },
+          {
+            "Value": 48000
+          },
+          {
+            "Value": 108000
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": false,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false,
+        "StructFallback": null
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.26"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.27"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 108000
+            }
+          }
+        }
+      },
+      "Signature": "870B3A19-4F0169A9-94DB95BD-EED1E5EC"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "CurrencyDecrease",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.34"
+        }
+      ],
+      "EvaluationFieldGuid": "9BE00924-44CBC2AE-DEE1ED8D-F8E4525D",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.34"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 108000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "9BE00924-44CBC2AE-DEE1ED8D-F8E4525D"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_2",
+    "Outer": "CurrencyDecrease",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.35"
+        }
+      ],
+      "EvaluationFieldGuid": "BE9A0051-411C2FC2-07B640A5-876C9724",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.35"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 108000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "BE9A0051-411C2FC2-07B640A5-876C9724"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_0",
+    "Outer": "CurrencyIncrease",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.36"
+        }
+      ],
+      "EvaluationFieldGuid": "B7E85370-4FA488B7-DE0B2688-3A9C7A75",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_0.MovieSceneFloatSection_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.36"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 108000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "B7E85370-4FA488B7-DE0B2688-3A9C7A75"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_2",
+    "Outer": "CurrencyIncrease",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "RenderOpacity",
+        "PropertyPath": "RenderOpacity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.37"
+        }
+      ],
+      "EvaluationFieldGuid": "1C15E0EB-4ACC6AD1-1905FE90-6B028603",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+              "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.37"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 108000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "1C15E0EB-4ACC6AD1-1905FE90-6B028603"
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'Overlay'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot'WBP_ModernMenu_Currency_C:WidgetTree.Overlay_0.OverlaySlot_2'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.44"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_ModernMenu_Currency_C:WidgetTree.Overlay_0.OverlaySlot_3'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.45"
+        },
+        {
+          "ObjectName": "OverlaySlot'WBP_ModernMenu_Currency_C:WidgetTree.Overlay_0.OverlaySlot_1'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.43"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Padding": {
+        "Right": -50.0
+      },
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_ModernMenu_Currency_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.42"
+      },
+      "Content": {
+        "ObjectName": "WBP_AltarTextBlock_C'WBP_ModernMenu_Currency_C:WidgetTree.Increase_Value'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.50"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Fill",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_ModernMenu_Currency_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.42"
+      },
+      "Content": {
+        "ObjectName": "RetainerBox'WBP_ModernMenu_Currency_C:WidgetTree.RetainerBox_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.47"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_0",
+    "Class": "UScriptClass'OverlaySlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HorizontalAlignment": "EHorizontalAlignment::HAlign_Center",
+      "VerticalAlignment": "EVerticalAlignment::VAlign_Center",
+      "Parent": {
+        "ObjectName": "Overlay'WBP_ModernMenu_Currency_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.42"
+      },
+      "Content": {
+        "ObjectName": "WBP_Original_ImageAndText_C'WBP_ModernMenu_Currency_C:WidgetTree.Current_Money'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.52"
+      }
+    }
+  },
+  {
+    "Type": "PanelSlot",
+    "Name": "PanelSlot_0",
+    "Outer": "RetainerBox_0",
+    "Class": "UScriptClass'PanelSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "RetainerBox'WBP_ModernMenu_Currency_C:WidgetTree.RetainerBox_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.47"
+      },
+      "Content": {
+        "ObjectName": "SizeBox'WBP_ModernMenu_Currency_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.48"
+      }
+    }
+  },
+  {
+    "Type": "RetainerBox",
+    "Name": "RetainerBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'RetainerBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "PanelSlot'WBP_ModernMenu_Currency_C:WidgetTree.RetainerBox_0.PanelSlot_0'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.46"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_ModernMenu_Currency_C:WidgetTree.Overlay_0.OverlaySlot_2'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.44"
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Class": "UScriptClass'SizeBox'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "HeightOverride": 30.0,
+      "bOverride_HeightOverride": true,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot'WBP_ModernMenu_Currency_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.49"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "PanelSlot'WBP_ModernMenu_Currency_C:WidgetTree.RetainerBox_0.PanelSlot_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.46"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Class": "UScriptClass'SizeBoxSlot'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox'WBP_ModernMenu_Currency_C:WidgetTree.SizeBox_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.48"
+      },
+      "Content": {
+        "ObjectName": "WBP_Original_ImageAndText_C'WBP_ModernMenu_Currency_C:WidgetTree.Current_Money_Outline'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.53"
+      }
+    }
+  },
+  {
+    "Type": "WBP_AltarTextBlock_C",
+    "Name": "Increase_Value",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'/Game/UI/Modern/Prefabs/WBP_AltarTextBlock.WBP_AltarTextBlock_C'",
+    "Template": {
+      "ObjectName": "WBP_AltarTextBlock_C'Default__WBP_AltarTextBlock_C'",
+      "ObjectPath": "/Game/UI/Modern/Prefabs/WBP_AltarTextBlock.10"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Color": {
+        "SpecifiedColor": {
+          "R": 0.623961,
+          "G": 0.577581,
+          "B": 0.514918,
+          "A": 1.0,
+          "Hex": "CFC8BE"
+        }
+      },
+      "FontInfo": {
+        "FontObject": {
+          "ObjectName": "Font'Font_Kingthings_Localized'",
+          "ObjectPath": "/Game/UI/CommonStyle/Fonts/Font_Kingthings_Localized.0"
+        },
+        "TypefaceFontName": "Regular-Regular",
+        "Size": 21.0,
+        "LetterSpacing": 20
+      },
+      "Text": {
+        "CultureInvariantString": "- 100"
+      },
+      "Padding": {
+        "Right": 10.0
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_ModernMenu_Currency_C:WidgetTree.Overlay_0.OverlaySlot_1'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.43"
+      },
+      "RenderTransform": {
+        "Translation": {
+          "X": 0.0,
+          "Y": -10.0
+        },
+        "Scale": {
+          "X": 0.7,
+          "Y": 0.7
+        }
+      },
+      "RenderOpacity": 0.0
+    }
+  },
+  {
+    "Type": "WBP_ModernMenu_Currency_C",
+    "Name": "Default__WBP_ModernMenu_Currency_C",
+    "Class": "WidgetBlueprintGeneratedClass'/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.WBP_ModernMenu_Currency_C'",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "UberGraphFrame": {},
+      "CurrentAmount": -1,
+      "NewAmount": -1,
+      "bHasScriptImplementedTick": false,
+      "bHasScriptImplementedPaint": false
+    }
+  },
+  {
+    "Type": "WBP_Original_ImageAndText_C",
+    "Name": "Current_Money",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'/Game/UI/Original/Prefabs/WBP_Original_ImageAndText.WBP_Original_ImageAndText_C'",
+    "Template": {
+      "ObjectName": "WBP_Original_ImageAndText_C'Default__WBP_Original_ImageAndText_C'",
+      "ObjectPath": "/Game/UI/Original/Prefabs/WBP_Original_ImageAndText.16"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultImage": {
+        "ImageSize": {
+          "X": 16.0,
+          "Y": 16.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D'T_UI_Property_1_MoneyV2_White'",
+          "ObjectPath": "/Game/Art/UI/Icons/Icon_Stats/T_UI_Property_1_MoneyV2_White.0"
+        }
+      },
+      "DefaultText": {
+        "CultureInvariantString": "999 999 999"
+      },
+      "DefaultColorOpacity": {
+        "SpecifiedColor": {
+          "R": 1.0,
+          "G": 0.938686,
+          "B": 0.846873,
+          "A": 1.0,
+          "Hex": "FFF8ED"
+        }
+      },
+      "DefaultFont": {
+        "FontObject": {
+          "ObjectName": "Font'Font_Robinson_Localized'",
+          "ObjectPath": "/Game/UI/CommonStyle/Fonts/Font_Robinson_Localized.0"
+        },
+        "OutlineSettings": {
+          "OutlineMaterial": {
+            "ObjectName": "MaterialInstanceConstant'MIC_CurrencyShine'",
+            "ObjectPath": "/Game/UI/Materials/Instances/Currency/MIC_CurrencyShine.0"
+          },
+          "OutlineColor": {
+            "R": 0.62396,
+            "G": 0.526372,
+            "B": 0.394525,
+            "A": 1.0,
+            "Hex": "CFC0A9"
+          }
+        },
+        "TypefaceFontName": "Medium",
+        "Size": 19.5,
+        "LetterSpacing": 20
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot'WBP_ModernMenu_Currency_C:WidgetTree.Overlay_0.OverlaySlot_3'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.45"
+      }
+    }
+  },
+  {
+    "Type": "WBP_Original_ImageAndText_C",
+    "Name": "Current_Money_Outline",
+    "Outer": "WidgetTree",
+    "Class": "WidgetBlueprintGeneratedClass'/Game/UI/Original/Prefabs/WBP_Original_ImageAndText.WBP_Original_ImageAndText_C'",
+    "Template": {
+      "ObjectName": "WBP_Original_ImageAndText_C'Default__WBP_Original_ImageAndText_C'",
+      "ObjectPath": "/Game/UI/Original/Prefabs/WBP_Original_ImageAndText.16"
+    },
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DefaultImage": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.0,
+            "Hex": "FFFFFF"
+          }
+        }
+      },
+      "DefaultText": {
+        "CultureInvariantString": "999 999 999"
+      },
+      "DefaultColorOpacity": {
+        "SpecifiedColor": {
+          "R": 0.623961,
+          "G": 0.577581,
+          "B": 0.514918,
+          "A": 0.0,
+          "Hex": "CFC8BE"
+        }
+      },
+      "DefaultFont": {
+        "OutlineSettings": {
+          "OutlineSize": 8,
+          "OutlineMaterial": {
+            "ObjectName": "MaterialInstanceConstant'MIC_CurrencyShine'",
+            "ObjectPath": "/Game/UI/Materials/Instances/Currency/MIC_CurrencyShine.0"
+          },
+          "OutlineColor": {
+            "R": 0.623961,
+            "G": 0.577581,
+            "B": 0.514918,
+            "A": 1.0,
+            "Hex": "CFC8BE"
+          }
+        },
+        "Size": 21.0,
+        "LetterSpacing": 20
+      },
+      "Slot": {
+        "ObjectName": "SizeBoxSlot'WBP_ModernMenu_Currency_C:WidgetTree.SizeBox_0.SizeBoxSlot_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.49"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "CurrencyDecrease_INST",
+    "Outer": "WBP_ModernMenu_Currency_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CurrencyDecrease'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.6"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Increase_Value",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "02BB6883-44D4C6B6-4C7BA5BB-9E75E6BE",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Current_Money_Outline",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "47E72CB0-466E4F96-D233549F-53474050",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "RetainerBox_0",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "91F7F7A2-4605F834-405E7DAE-72313241",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "CurrencyDecrease",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST.CompiledData'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.28"
+      },
+      "Signature": "D67A6F4A-47D2E67A-B8D7DE85-1A6DDA7C"
+    }
+  },
+  {
+    "Type": "WidgetAnimation",
+    "Name": "CurrencyIncrease_INST",
+    "Outer": "WBP_ModernMenu_Currency_C",
+    "Class": "UScriptClass'WidgetAnimation'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CurrencyIncrease'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.7"
+      },
+      "AnimationBindings": [
+        {
+          "WidgetName": "Increase_Value",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "8F49F9A6-4DC1FBA6-CE9E3BAE-04713985",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "Current_Money_Outline",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "F508D64E-4CB5ED96-4ADA2B9F-65AB89EF",
+          "bIsRootWidget": false
+        },
+        {
+          "WidgetName": "RetainerBox_0",
+          "SlotWidgetName": "None",
+          "AnimationGuid": "B73F32CA-461A75D7-538335B7-3154737A",
+          "bIsRootWidget": false
+        }
+      ],
+      "DisplayLabel": "CurrencyIncrease",
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST.CompiledData'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.29"
+      },
+      "Signature": "348A3650-47DE4077-7A1AD493-CC948611"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "WBP_ModernMenu_Currency_C",
+    "Class": "UScriptClass'WidgetBlueprintGeneratedClass'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree'WBP_ModernMenu_Currency_C:WidgetTree'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.57"
+      },
+      "bClassRequiresNativeTick": true,
+      "Animations": [
+        {
+          "ObjectName": "WidgetAnimation'WBP_ModernMenu_Currency_C:CurrencyIncrease_INST'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.55"
+        },
+        {
+          "ObjectName": "WidgetAnimation'WBP_ModernMenu_Currency_C:CurrencyDecrease_INST'",
+          "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.54"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:ExecuteUbergraph_WBP_ModernMenu_Currency'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'VAltarWidget'",
+      "ObjectPath": "/Script/Altar"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:SequenceEvent__ENTRYPOINTWBP_ModernMenu_Currency_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.3"
+      },
+      {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:SequenceEvent__ENTRYPOINTWBP_ModernMenu_Currency'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.2"
+      },
+      {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+      },
+      {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:SwapCurrencyOnAnim'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.4"
+      },
+      {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:Destruct'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.0"
+      },
+      {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:ExecuteUbergraph_WBP_ModernMenu_Currency'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CurrencyDecrease",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CurrencyIncrease",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Transient | RepSkip",
+        "PropertyClass": {
+          "ObjectName": "Class'WidgetAnimation'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Current_Money",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Original_ImageAndText_C'",
+          "ObjectPath": "/Game/UI/Original/Prefabs/WBP_Original_ImageAndText.18"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Current_Money_Outline",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_Original_ImageAndText_C'",
+          "ObjectPath": "/Game/UI/Original/Prefabs/WBP_Original_ImageAndText.18"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Increase_Value",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "WidgetBlueprintGeneratedClass'WBP_AltarTextBlock_C'",
+          "ObjectPath": "/Game/UI/Modern/Prefabs/WBP_AltarTextBlock.11"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "RetainerBox_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | ExportObject | BlueprintReadOnly | DisableEditOnInstance | InstancedReference | RepSkip | PersistentInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'RetainerBox'",
+          "ObjectPath": "/Script/UMG"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CurrentAmount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NewAmount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OutLineMaterial",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WBP_ModernMenu_Currency": {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:ExecuteUbergraph_WBP_ModernMenu_Currency'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.1"
+      },
+      "Destruct": {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:Destruct'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.0"
+      },
+      "SwapCurrencyOnAnim": {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:SwapCurrencyOnAnim'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.4"
+      },
+      "UpdateCurrency": {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:UpdateCurrency'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.5"
+      },
+      "SequenceEvent__ENTRYPOINTWBP_ModernMenu_Currency": {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:SequenceEvent__ENTRYPOINTWBP_ModernMenu_Currency'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.2"
+      },
+      "SequenceEvent__ENTRYPOINTWBP_ModernMenu_Currency_0": {
+        "ObjectName": "Function'WBP_ModernMenu_Currency_C:SequenceEvent__ENTRYPOINTWBP_ModernMenu_Currency_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WBP_ModernMenu_Currency_C'Default__WBP_ModernMenu_Currency_C'",
+      "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.51"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "WBP_ModernMenu_Currency_C",
+    "Class": "UScriptClass'WidgetTree'",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Overlay'WBP_ModernMenu_Currency_C:WidgetTree.Overlay_0'",
+        "ObjectPath": "/Game/UI/Modern/GameMenuLayer/Common/WBP_ModernMenu_Currency.42"
+      }
+    }
+  }
+]
