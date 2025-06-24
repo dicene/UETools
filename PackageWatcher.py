@@ -39,11 +39,11 @@ class Window(QtWidgets.QWidget):
         self.setLayout(layout)
 
     def start_button_clicked(self):
-        if self.timer.isActive():
+        # if self.timer.isActive():
 
-        timer = QtCore.QTimer(self)
-        timer.timeout.connect(self.tick)
-        timer.start(100)
+        self.timer = QtCore.QTimer(self)
+        self.timer.timeout.connect(self.tick)
+        self.timer.start(100)
 
     # def count_clicks(self):
     #     self.count += 1

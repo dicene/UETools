@@ -9,7 +9,7 @@ import subprocess
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 
-path = "" # path to where UE is outputting your pak
+path = "C:\\Users\\Thoth\\Documents\\GitHub\\IA_UETest 5.3\\Build\\Windows\\OblivionRemastered\\Content\\Paks" # path to where UE is outputting your pak
 dest_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Oblivion Remastered\\OblivionRemastered\\Content\\Paks\\LogicMods\\" # path to your desired paks/LogicMods folder
 old_name = "pakchunk200*" # original name of your pak
 new_name = "TestMod1" # desired name of your pak
